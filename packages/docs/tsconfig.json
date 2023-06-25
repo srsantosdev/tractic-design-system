@@ -1,0 +1,4 @@
+{
+  "extends": "@tractic/ts-config/react.json",
+  "include": ["src"],
+}

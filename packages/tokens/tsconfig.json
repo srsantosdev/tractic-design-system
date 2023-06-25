@@ -1,0 +1,4 @@
+{
+  "extends": "@tractic/ts-config/base.json",
+  "include": ["src"],
+}
