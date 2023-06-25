@@ -6,6 +6,15 @@ export default {
   component: Avatar,
   args: {
     src: 'https://avatars.githubusercontent.com/u/2065981?v=4',
+    alt: 'User',
+  },
+  argTypes: {
+    src: {
+      control: 'text',
+    },
+    alt: {
+      control: 'text',
+    },
   },
 } as Meta<AvatarProps>
 

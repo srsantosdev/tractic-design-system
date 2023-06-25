@@ -10,8 +10,18 @@ const config = {
     name: "@storybook/react-vite",
     options: {},
   },
-  docs: {
-    autodocs: "tag",
+  core: {
+    builder: "@storybook/builder-vite",
   },
+  features: {
+    "storyStoreV7": true
+  },
+  viteFinal: async (config) => {
+    if (config.isProduction) {
+      config.base = "/tractic-ds/";
+    }
+
+    return config
+  }
 };
 export default config;
