@@ -22,6 +22,6 @@ jobs:
       
       - name: deploy storybook
         working-directory: ./packages/docs
-        run: yarn deploy-storybook -- --ci --existing-output-dir=storybook-static
+        run: yarn deploy-storybook --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GH_TOKEN }}
