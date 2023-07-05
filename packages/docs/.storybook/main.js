@@ -18,7 +18,7 @@ const config = {
   },
   viteFinal: async (config) => {
     if (config.isProduction) {
-      config.base = "/tractic-ds/";
+      config.base = "/tractic-design-system/";
     }
 
     return config
